@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.non-nav {
+    width: 92%;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* nav */
+nav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0; 
+    background-color: #8d99ae;
+    overflow-x: hidden;
+    padding-top: 180px;
+}
+nav ul {
+    list-style: none;
+    align-content: center;
+}
+nav a {
+    padding: 60px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+nav a:hover {
+    color: #d90429;
+}
+
+/* banner - home page */
+.banner {
+    height: 500px;
+    background-color: #edf2f4;
+}
+.banner-text {
+    text-align: center;
+    color: #d90429;
+    font-size: 90px;
+    padding-top: 13%;
+}
+.banner img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* home page project button */
+#project-button {
+    background-color: white;
+    padding: 10px 75px 10px 75px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2.5em;
+    margin-left: 7em;
+    display: inline-block;
+    border-radius: 10px;
+}
+#project-button:hover{
+    transition: 0.5s;
+    box-shadow: inset 400px 0 0 0 #ef233c;
+}
+
+/* home page welcome text */
+.about {
+    height: 55vh;
+    background-color: white;
+}
+.about-text p {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 170px;
+    padding-top: 4em;
+    padding-left: 3em;
+    width: 90%;
+}
+/* home page gallery button */
+#gallery-button {
+    background-color: #edf2f4;
+    padding: 10px 75px 10px 75px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 10em;
+    display: inline-block;
+    border-radius: 10px;
+}
+#gallery-button:hover{
+    transition: 0.5s;
+    box-shadow: inset -400px 0 0 0 #ef233c;
+}
+
+/* home page - two columns */
+main {
+    height: fit-content;
+    margin-bottom: 10vh;
+}
+
+/* resume  */
+aside {
+    width: 50%;
+    float: left;
+}
+.resume {
+    width: 70%;
+    float: right;
+    margin: auto;
+}
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.resume-content div {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+aside img {
+    width: 350px;
+    border: 20px solid #ef233c;
+}
+.hover {
+    opacity: 1; 
+    transition: 0.3s; 
+    width: 310px;
+    height: 450px;
+}
+ /* the overlay color rectangle  */
+.overlay {
+    background-color: #2b2b42;
+    opacity: 0;
+    /* figure out size to cover just image, set opacity to .5 */
+    width: 350px;
+    height: 478px;
+} 
+.hover:hover .overlay{
+    opacity: .4;
+}
+
+/* overlay text  */
+.text {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+    color: white;
+}
+.left-info a {
+    text-decoration: none;
+}
+aside h2 {
+    color: #2b2b42;
+    font-size: 45px;
+}
+
+/* home page - contact */
+section {
+    width: 48%;
+    float: right;
+}
+.contact-table {
+    width: 80%;
+    margin: auto;
+}
+section h2 {
+    font-size: 50px;
+    padding-top: 170px;
+}
+table {
+    width: 80%;
+    margin-top: 20px;
+}
+th, td {
+    padding:10px;
+}
+table a {
+    text-decoration: none;
+    color: #ef233c;
+    font-size: 20px;
+}
+table img {
+    width: 50px;
+}
+
+
+/* footer */
+footer {
+    padding: 40px;
+    background-color: #edf2f4;
+    color: #2b2b2b;
+    position: relative;
+}
+footer p {
+    text-align: center;
+}
+footer .contact {
+    word-spacing: 50px;
+    width: 85%;
+    float: right;
+}
+footer .contact a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ef233c;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* projects page - 2 column layout */
+.sideleft{
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.sideleft img, .sideright img{
+    width: 80%;
+}
+.sideright{
+    width: 40%;
+    float: right;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#projects {
+    height: fit-content;
+    width: 80%;
+    
+    margin-left: 14%;
+    margin-top: 80px;
+}
+
+
+/* gallery page */
+.gallery {
+    width: 88%;
+    height:fit-content;
+    margin-top: 100px;
+    float: right;
+}
+.all-pics {
+    float: left;
+}
+.gallery-items{
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.gallery-items img{
+    width: 100%;
+}
+.gallery-text {
+    width: 85%;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 8vh;
+}
+
+/* About page */
+#bitmoji {
+    width: 60%;
+    float: right;
+    margin-top: 90px;
+}
+.bitmoji-image {
+    width: 45%;
+    height: fit-content;
+    float: left;
+}
+.aboutText{
+    width: 50%;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.aboutText p {
+    width: 80%;
+    float: left;
+}
+.extra-about {
+    padding-top: 8vh;
+}
+#like {
+    width: 40%;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    float: left;
+}
+#dream {
+    width: 45%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    float: right;
+}
+dl dt {
+    font-weight: bold;
+    color: #ef233c;
+    font-size: 25px;
+    /* display: none; */
+}
+dl dd {
+    display: none;
+}
+
+
+/* Contact page */
+.contactText {    
+    width: 50%;
+    margin-top: 180px;
+    float: left;
+    text-align: right;
+    font-size: 30px;
+}
+.contactText p {
+    width: 80%;
+    float: right;
+}
+#contact_form {
+    width: 50%;
+    float: right;
+    height: fit-content;    
+}
+#contact_form h2 {
+    font-size: 30px;
+    width: 100vh;
+    margin-top: 160px;
+}
+form {
+    width: 400px;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    color: white;
+    background-color: #ef233c;;
+    padding: 1em 3em;
+    width: 300px;
+    outline: none;
+    border: 1px solid #ef233c;;
+    transition: all 0.3s;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input, textarea {
+    margin: 15px auto;
+    width: 300px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    outline: none;
+}
+
+
+/* responsive design */
+/* medium size ~ tablets */
+@media(max-width: 1392px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-text {
+        padding-top: 100px;
+        font-size: 4em;
+    }
+    footer .contact {
+        width: 100%;
+        float: none;        
+    }
+    footer .contact a {
+        display: block;
+        text-align: center;
+    } 
+}
+
+
+/* nav icon for small screens */
+#nav {
+    display: none;
+}
+header label {
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    padding: 20px;
+}
+
+/* small size ~ screens */
+@media(max-width: 1065px) {
+
+    /* navigation */
+    header label {
+        display: block;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px 30px;
+        display: block;  
+        color: #d90429;      
+    }
+    nav {
+        text-align: center;
+        padding-top: 0px;
+        width: 100%;
+        float: none;
+        background-color: #edf2f4;;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    nav ul li {
+        display: block;
+    }
+    #nav:checked~nav {
+        max-height: max-content;
+    }
+    nav ul li:hover ul {
+        display: none;
+    }
+
+
+    .non-nav {
+        width: 100%;
+    }
+
+    /* banner/header for each page */
+    .banner-text {
+        font-size: 2.5em;
+        text-align: center;
+        padding-top: 10vh;
+        padding-left: 1vh;
+    }
+    .banner {
+        width: 100%;
+        height: 250px;
+        background-color: #edf2f4;
+        margin-right: 0px;
+    }
+    .banner img {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+
+    /* home page */
+    .about-text p {
+        padding-left: 6vh;
+        padding-right: 6vh;
+        width: 100%;
+        padding-top: 10vh;
+    }
+    .about {
+        height: 350px;
+    }
+    
+    #project-button {
+        display: none;
+    }
+    #gallery-button {
+        display:none;
+    }
+    /* Home page - resume  */
+    aside {
+        width: 100%;
+        float: none;
+    }
+    .resume {
+        width: fit-content;
+        float: none;
+        margin: auto;
+    }
+    /* home page - contact table */
+    section {
+        width: 100%;
+        float: none;
+    }
+    .contact-table {
+        width: fit-content;
+        margin: auto;
+    }
+    section h2 {
+        padding-top: 110px;
+    }
+
+
+    /* footer */
+    footer {
+        width: 100%;
+    }
+    footer .contact {
+        width: 100%;
+        float: none;        
+    }
+    footer .contact a {
+        display: block;
+        text-align: center;
+    }
+
+    /* about page */
+    #bitmoji {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .bitmoji-image {
+        width: 100%;
+        float: none;
+    }
+    .aboutText{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .aboutText p {
+        width: 80%;
+        margin: auto;
+
+        float: none;
+    }
+
+
+    /* contact page */
+    .contactText {    
+        width: 100%;
+        margin-top: 100px;
+        float: none;
+        text-align: center;
+    }
+    .contactText p {
+        width: 100%;
+        float: none;
+    }
+    #contact_form {
+        width: 100%;
+        float: none;
+        height: fit-content;  
+    }
+    #contact_form h2 {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contactText p {
+        width: 80%;
+        float: none;
+        margin: auto;
+    }
+    form {
+        margin: auto;
+    }
+    main {
+        height: fit-content;
+    }
+
+
+    /* project page */
+    .sideleft, .sideright {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .sideleft img, .sideright img{
+        width: 100%;
+    }
+
+    /* gallery page */
+    .gallery {
+        width: 100%;
+    }
+    .all-pics {
+        width: 100%;
+        float: none;
+    }
+    .gallery-items{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .gallery-text {
+        margin: auto;
+    }
+}

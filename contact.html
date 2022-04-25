@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISABEL | CONTACT</title>
+    <link rel="stylesheet" href="css/home2.css">
+
+</head>
+<body>
+    
+    <header id="home">
+
+        <!-- hum icon. navigation button for mobile -->
+        <input type="checkbox" name="nav" id="nav">
+        <label for="nav">&#9776;</label>
+
+        <!-- navigation - list of anchor tags -->
+        <nav>
+            <ul>
+                <li><a href="home2.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav><!-- nav -->
+        <!-- clearfix -->
+        <div class="clearfix"></div>
+    </header><!-- header -->
+
+    <div class="non-nav">
+
+        <div class="banner">
+            <div class="banner-text">
+                <h2>CONTACT</h2>
+                <img src="images/Capture.PNG" alt="">
+                
+            </div><!-- banner-text -->
+
+        </div><!-- banner -->
+
+        <main>
+            <!-- <img src="images/Capture.PNG" alt=""> -->
+            <div class="contactText">
+                <p>
+                    Lets get in touch! I am looking for new opportunities to apply my technical skills.
+                    If you have any further questions or just want to chat about your new favorite podcast
+                    please reach out!
+                </p> 
+            </div>
+
+            <!-- <div class="clearfix"></div> -->
+
+            <div id="contact_form">
+                <form method="POST" onsubmit="return validateForm()">
+                    <h2>Send me a message!</h2>
+                    <!-- name -->
+                    <input type="text" name="name" id="name" placeholder="Name...">
+    
+                    <!-- email -->
+                    <input type="email" name="email" id="email" placeholder="Email...">
+    
+                    <!-- comment -->
+                    <textarea name="comment" cols="40" rows="6"></textarea>
+    
+                    <!-- submit button -->
+                    <input type="submit" value="Send">
+    
+                </form>
+            </div>
+
+            <script src="js/scriptForm.js"></script>
+            
+            <div class="clearfix"></div>
+
+        </main>
+            
+        <footer>
+            
+            <div class="contact">
+                <a href="mailto:isabel0fire@gmail.com">isabel0fire@gmail.com</a>
+                <a href="https://www.linkedin.com/in/isabeljrodriguez/">linkedin.com/isabeljrodriguez</a>
+                <a href="https://github.com/ijr12345">github.com/ijr12345</a>
+            </div>
+            <br><br>
+            <p>
+                Copyright &copy; Isabel Rodriguez
+            </p>
+        </footer>
+
+    </div>
+
+    
+</body>
+</html>
